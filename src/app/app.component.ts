@@ -10,12 +10,17 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  isOpen = false;
   title = 'Ohcoma';
   isNavOpen: boolean = false;
   fillColor: string = '#00d9ff'; // or any other color valu
 
   toggleNav() {
     this.isNavOpen = !this.isNavOpen;
+  }
+
+  toggleDropdown() {
+    this.isOpen = !this.isOpen;
   }
 
 }
